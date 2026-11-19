@@ -47,3 +47,40 @@
 2026-11-18T23:15:18-03:00 | INFO    | Ignorado (já processado, mesmo conteúdo): relatos_2026-11-19.jsonl
 2026-11-18T23:15:18-03:00 | INFO    | Saídas gravadas em saida: 241 relatos, 16 alertas, 17 na quarentena
 2026-11-18T23:15:18-03:00 | INFO    | Fim da execução 20261118T231518: status=ok, 0 linhas lidas, 0 aceitos, 0 rejeitados, 0 alertas novos
+2026-11-18T23:35:30-03:00 | INFO    | Início da execução 20261118T233530
+2026-11-18T23:35:30-03:00 | WARNING | RPA_SAL_LGPD_SECRET ausente: usando sal de desenvolvimento (defina o sal real em produção)
+2026-11-18T23:35:30-03:00 | INFO    | Catálogo carregado: 20 lugares (lugares_2026-11-19.jsonl)
+2026-11-18T23:35:30-03:00 | INFO    | Processado relatos_2026-11-12.jsonl: 33 aceitos, 4 na quarentena
+2026-11-18T23:35:30-03:00 | INFO    | Processado relatos_2026-11-13.jsonl: 33 aceitos, 2 na quarentena
+2026-11-18T23:35:30-03:00 | INFO    | Processado relatos_2026-11-14.jsonl: 35 aceitos, 4 na quarentena
+2026-11-18T23:35:30-03:00 | INFO    | Limite de 3 arquivo(s) por execução atingido: relatos_2026-11-15.jsonl fica para a próxima
+2026-11-18T23:35:30-03:00 | INFO    | Limite de 3 arquivo(s) por execução atingido: relatos_2026-11-16.jsonl fica para a próxima
+2026-11-18T23:35:30-03:00 | INFO    | Limite de 3 arquivo(s) por execução atingido: relatos_2026-11-17.jsonl fica para a próxima
+2026-11-18T23:35:30-03:00 | INFO    | Limite de 3 arquivo(s) por execução atingido: relatos_2026-11-19.jsonl fica para a próxima
+2026-11-18T23:35:30-03:00 | INFO    | Saídas gravadas em saida: 101 relatos, 1 alertas, 10 na quarentena
+2026-11-18T23:35:30-03:00 | INFO    | [ALERTA] Inclui+ RPA: 1 alerta(s) novo(s) de barreira recorrente
+2026-11-18T23:35:30-03:00 | INFO    | [ALERTA] - Tempero Vivo (vision): 3 relatos, severidade alta
+2026-11-18T23:35:30-03:00 | INFO    | Fim da execução 20261118T233530: status=ok, 111 linhas lidas, 101 aceitos, 10 rejeitados, 1 alertas novos
+2026-11-18T23:35:55-03:00 | INFO    | Início da execução 20261118T233555
+2026-11-18T23:35:55-03:00 | WARNING | RPA_SAL_LGPD_SECRET ausente: usando sal de desenvolvimento (defina o sal real em produção)
+2026-11-18T23:35:55-03:00 | INFO    | Catálogo carregado: 20 lugares (lugares_2026-11-19.jsonl)
+2026-11-18T23:35:55-03:00 | INFO    | Ignorado (já processado, mesmo conteúdo): relatos_2026-11-12.jsonl
+2026-11-18T23:35:55-03:00 | INFO    | Ignorado (já processado, mesmo conteúdo): relatos_2026-11-13.jsonl
+2026-11-18T23:35:55-03:00 | INFO    | Ignorado (já processado, mesmo conteúdo): relatos_2026-11-14.jsonl
+2026-11-18T23:35:55-03:00 | INFO    | Processado relatos_2026-11-15.jsonl: 32 aceitos, 1 na quarentena
+2026-11-18T23:35:55-03:00 | INFO    | Processado relatos_2026-11-16.jsonl: 39 aceitos, 1 na quarentena
+2026-11-18T23:35:55-03:00 | INFO    | Processado relatos_2026-11-17.jsonl: 28 aceitos, 2 na quarentena
+2026-11-18T23:35:55-03:00 | INFO    | Processado relatos_2026-11-19.jsonl: 41 aceitos, 3 na quarentena
+2026-11-18T23:35:55-03:00 | INFO    | Saídas gravadas em saida: 241 relatos, 16 alertas, 17 na quarentena
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] Inclui+ RPA: 15 alerta(s) novo(s) de barreira recorrente
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Cinema do Largo (mobility): 6 relatos, severidade alta
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Livraria Margem (cognitive): 3 relatos, severidade alta
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Livraria Margem (mobility): 3 relatos, severidade alta
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Academia Movimento Livre (hearing): 3 relatos, severidade alta
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Teatro Alvorada (vision): 3 relatos, severidade alta
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Cine Estação (vision): 5 relatos, severidade media
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Cinema do Largo (vision): 5 relatos, severidade media
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Bistrô Quintal (mobility): 4 relatos, severidade media
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Bistrô Quintal (vision): 4 relatos, severidade media
+2026-11-18T23:35:55-03:00 | INFO    | [ALERTA] - Pizzaria Forno Aberto (vision): 4 relatos, severidade media
+2026-11-18T23:35:55-03:00 | INFO    | Fim da execução 20261118T233555: status=ok, 147 linhas lidas, 140 aceitos, 7 rejeitados, 15 alertas novos

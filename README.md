@@ -13,7 +13,7 @@ Repositório do MVP: <https://github.com/kaikyalvaro1708/inclui-gs> · URL do MV
 | Juan Pinheiro de França | RM552202 |
 | Lucas Rodrigues da Silva | RM98344 |
 
-Turma 4ESPW. Repositório: <https://github.com/JuanPinheiroFIAP/GS-RPA>. Link do vídeo (até 3 min): _preencher depois de gravar_.
+Turma 4ESPW. Repositório: <https://github.com/JuanPinheiroFIAP/GS-RPA>. **Vídeo de demonstração (até 3 min):** [`video/demo_rpa.mp4`](https://github.com/JuanPinheiroFIAP/GS-RPA/blob/main/video/demo_rpa.mp4) (arquivo no repositório via Git LFS; no GitHub, clique em *Download* para assistir).
 
 ## O problema e o que o robô faz
 

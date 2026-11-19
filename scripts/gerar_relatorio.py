@@ -166,7 +166,7 @@ prioridades {rel['prioridades']['alta']} alta, {rel['prioridades']['media']} mé
 <h2>14. Links</h2>
 <table><tr><th>Item</th><th>Link</th></tr>
 <tr><td>Repositório GitHub do GS RPA (público)</td><td>https://github.com/JuanPinheiroFIAP/GS-RPA</td></tr>
-<tr><td>Vídeo demonstrativo (até 3 min)</td><td><b>[preencher com a URL do vídeo]</b></td></tr>
+<tr><td>Vídeo demonstrativo (até 3 min)</td><td>https://github.com/JuanPinheiroFIAP/GS-RPA/blob/main/video/demo_rpa.mp4 (arquivo no repositório, via Git LFS)</td></tr>
 <tr><td>Repositório do MVP</td><td>https://github.com/kaikyalvaro1708/inclui-gs</td></tr>
 <tr><td>MVP publicado</td><td>https://d3ls3zp8wqbtsw.cloudfront.net</td></tr></table>
 </body></html>"""

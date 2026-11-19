@@ -19,3 +19,20 @@
 {"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "aviso_sal_lgpd_ausente"}
 {"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "catalogo_carregado", "lugares": 20, "arquivo": "lugares_2026-11-19.jsonl"}
 {"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "fim", "status": "ok", "linhas_lidas": 0, "relatos_aceitos_nesta_execucao": 0, "alertas_novos": 0, "duracao_s": 0.05}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "inicio", "entrada": "entrada", "reprocessar": false}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "aviso_sal_lgpd_ausente"}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "catalogo_carregado", "lugares": 20, "arquivo": "lugares_2026-11-19.jsonl"}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-12.jsonl", "aceitos": 33, "quarentena": 4}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-13.jsonl", "aceitos": 33, "quarentena": 2}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-14.jsonl", "aceitos": 35, "quarentena": 4}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "alertas_novos", "total": 1, "ids": ["tempero-vivo|vision"]}
+{"ts": "2026-11-18T23:35:30-03:00", "execucao": "20261118T233530", "evento": "fim", "status": "ok", "linhas_lidas": 111, "relatos_aceitos_nesta_execucao": 101, "alertas_novos": 1, "duracao_s": 0.06}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "inicio", "entrada": "entrada", "reprocessar": false}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "aviso_sal_lgpd_ausente"}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "catalogo_carregado", "lugares": 20, "arquivo": "lugares_2026-11-19.jsonl"}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-15.jsonl", "aceitos": 32, "quarentena": 1}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-16.jsonl", "aceitos": 39, "quarentena": 1}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-17.jsonl", "aceitos": 28, "quarentena": 2}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-19.jsonl", "aceitos": 41, "quarentena": 3}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "alertas_novos", "total": 15, "ids": ["cinema-do-largo|mobility", "livraria-margem|cognitive", "livraria-margem|mobility", "movimento-livre|hearing", "teatro-alvorada|vision", "cine-estacao|vision", "cinema-do-largo|vision", "bistro-quintal|mobility", "bistro-quintal|vision", "forno-aberto|vision", "sabor-de-casa|vision", "clinica-viver|vision", "farmacia-bairro|vision", "movimento-livre|vision", "praca-encontro|mobility"]}
+{"ts": "2026-11-18T23:35:55-03:00", "execucao": "20261118T233555", "evento": "fim", "status": "ok", "linhas_lidas": 147, "relatos_aceitos_nesta_execucao": 140, "alertas_novos": 15, "duracao_s": 0.16}
