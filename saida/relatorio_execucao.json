@@ -1,0 +1,30 @@
+{
+  "alertas_novos": 0,
+  "alertas_total": 16,
+  "arquivos": {
+    "com_falha": [],
+    "encontrados": 7,
+    "ignorados_ja_processados": 7,
+    "processados": 0
+  },
+  "avisos": {},
+  "base_total": 241,
+  "catalogo": {
+    "arquivo": "lugares_2026-11-19.jsonl",
+    "lugares": 20
+  },
+  "correcoes_automaticas": {},
+  "duracao_s": 0.05,
+  "execucao": "20261118T231518",
+  "fim": "2026-11-18T23:15:18-03:00",
+  "inicio": "2026-11-18T23:15:18-03:00",
+  "linhas_lidas": 0,
+  "prioridades": {
+    "alta": 79,
+    "baixa": 120,
+    "media": 42
+  },
+  "rejeitados_por_motivo": {},
+  "relatos_aceitos_nesta_execucao": 0,
+  "status": "ok"
+}

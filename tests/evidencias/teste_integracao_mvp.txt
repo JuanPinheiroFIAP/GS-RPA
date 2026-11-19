@@ -1,0 +1,14 @@
+✔ carrega os arquivos reais gerados pelo robô (8.7698ms)
+✔ lugar com alerta mostra aviso do nível alert, filtrado pela necessidade (3.7221ms)
+✔ lugar desconhecido ou sem relatos não gera aviso (2.5258ms)
+✔ fila de revisão vem ordenada da severidade mais alta para a menor (1.9665ms)
+✔ se o robô não gerou arquivos, o MVP segue sem quebrar (0.9543ms)
+✔ os arquivos não carregam dado pessoal (4.1914ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 134.2726

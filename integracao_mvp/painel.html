@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inclui+ · Fila de revisão do robô RPA</title>
+  <style>
+    :root { --fundo:#ffffff; --texto:#1b1f24; --suave:#4b5563; --linha:#d0d7de; --alta:#b42318; --media:#92400e; --ok:#166534; --destaque:#1d4ed8; }
+    @media (prefers-color-scheme: dark) { :root { --fundo:#10151b; --texto:#eef2f6; --suave:#aab4c0; --linha:#2d3743; --alta:#ff8a80; --media:#fbbf6a; --ok:#6ee7a0; --destaque:#8ab4ff; } }
+    body { margin:0; background:var(--fundo); color:var(--texto); font:16px/1.5 system-ui, sans-serif; }
+    main { max-width:62rem; margin:0 auto; padding:1.25rem 1rem 3rem; }
+    h1 { font-size:1.5rem; margin:0 0 .25rem; } h2 { font-size:1.15rem; margin:2rem 0 .5rem; }
+    .sub { color:var(--suave); margin:0 0 1rem; }
+    .cartoes { display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:.75rem; margin:1rem 0; }
+    .cartao { border:1px solid var(--linha); border-radius:.5rem; padding:.75rem; }
+    .cartao b { display:block; font-size:1.6rem; }
+    table { width:100%; border-collapse:collapse; } caption { text-align:left; color:var(--suave); padding-bottom:.4rem; }
+    th, td { text-align:left; padding:.5rem .5rem; border-bottom:1px solid var(--linha); vertical-align:top; }
+    th { font-size:.85rem; color:var(--suave); }
+    .tag { font-weight:700; } .alta { color:var(--alta); } .media { color:var(--media); } .ok { color:var(--ok); }
+    .aviso { border-left:4px solid var(--destaque); padding:.5rem .75rem; margin:.75rem 0; }
+    a:focus-visible, button:focus-visible, select:focus-visible { outline:3px solid var(--destaque); outline-offset:2px; }
+    .tabela { overflow-x:auto; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Fila de revisão do robô</h1>
+  <p class="sub" id="sub">Carregando a saída do robô…</p>
+  <p class="aviso" role="note">O robô só levanta alertas com evidência. Quem decide mudar a nota de um local é uma pessoa da equipe.</p>
+  <div class="cartoes" id="cartoes" aria-live="polite"></div>
+
+  <h2>Alertas de barreira recorrente</h2>
+  <div class="tabela"><table id="alertas"><caption>Do mais grave para o menos grave</caption>
+    <thead><tr><th scope="col">Local</th><th scope="col">Necessidade</th><th scope="col">Severidade</th><th scope="col">Relatos (7 dias)</th><th scope="col">O que fazer</th></tr></thead><tbody></tbody></table></div>
+
+  <h2>Aviso que o cartão do local mostra no MVP</h2>
+  <p><label for="lugar">Local: </label><select id="lugar"></select>
+     <label for="need"> Necessidade: </label><select id="need"></select></p>
+  <p class="aviso" id="previa" aria-live="polite"></p>
+</main>
+<script type="module">
+  import { loadRpaData, placeNotice, reviewQueue, NEED_LABEL } from './relatosRpa.js';
+  const dados = await loadRpaData('../saida/');
+  const sub = document.getElementById('sub');
+  if (!dados) {
+    sub.textContent = 'A saída do robô não está disponível. Rode: python -m rpa_relatos';
+  } else {
+    const fila = reviewQueue(dados);
+    const lugares = Object.entries(dados.lugares);
+    const totalRelatos = lugares.reduce((s, [, l]) => s + l.total_relatos, 0);
+    sub.textContent = `Dados até ${new Date(dados.dadosAte).toLocaleString('pt-BR')} · fonte: relatos validados pelo robô`;
+    document.getElementById('cartoes').innerHTML = [
+      [totalRelatos, 'relatos validados'], [fila.length, 'alertas abertos'],
+      [fila.filter((a) => a.severidade === 'alta').length, 'severidade alta'], [lugares.filter(([, l]) => l.tem_alerta).length, 'locais com alerta'],
+    ].map(([n, t]) => `<div class="cartao"><b>${n}</b>${t}</div>`).join('');
+    document.querySelector('#alertas tbody').innerHTML = fila.map((a) =>
+      `<tr><td>${a.lugar_nome}</td><td>${NEED_LABEL[a.necessidade]}</td><td class="tag ${a.severidade}">${a.severidade}</td><td>${a.relatos_na_janela}</td><td>${a.recomendacao}</td></tr>`).join('');
+
+    const sl = document.getElementById('lugar'), sn = document.getElementById('need'), prev = document.getElementById('previa');
+    sl.innerHTML = lugares.map(([id, l]) => `<option value="${id}">${l.nome}</option>`).join('');
+    sn.innerHTML = Object.entries(NEED_LABEL).map(([id, nome]) => `<option value="${id}">${nome}</option>`).join('');
+    sl.value = fila[0]?.lugar_id ?? sl.value; sn.value = fila[0]?.necessidade ?? sn.value;
+    const atualizar = () => { const a = placeNotice(dados, sl.value, [sn.value]); prev.textContent = a ? a.message : 'Sem aviso para este local e necessidade.'; };
+    sl.onchange = sn.onchange = atualizar; atualizar();
+  }
+</script>
+</body>
+</html>

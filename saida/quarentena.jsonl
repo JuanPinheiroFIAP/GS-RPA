@@ -1,0 +1,17 @@
+{"arquivo": "relatos_2026-11-12.jsonl", "linha": 6, "motivo": "sem_data_hora", "relato_id": "2026-11-12-006"}
+{"arquivo": "relatos_2026-11-12.jsonl", "linha": 15, "motivo": "nota_nao_numerica", "relato_id": "2026-11-12-015"}
+{"arquivo": "relatos_2026-11-12.jsonl", "linha": 20, "motivo": "sem_data_hora", "relato_id": "2026-11-12-020"}
+{"arquivo": "relatos_2026-11-12.jsonl", "linha": 32, "motivo": "sem_data_hora", "relato_id": "2026-11-12-032"}
+{"arquivo": "relatos_2026-11-13.jsonl", "linha": 1, "motivo": "sem_data_hora", "relato_id": "2026-11-13-001"}
+{"arquivo": "relatos_2026-11-13.jsonl", "linha": 24, "motivo": "nota_nao_numerica", "relato_id": "2026-11-13-024"}
+{"arquivo": "relatos_2026-11-14.jsonl", "linha": 22, "motivo": "sem_data_hora", "relato_id": "2026-11-14-022"}
+{"arquivo": "relatos_2026-11-14.jsonl", "linha": 30, "motivo": "nota_nao_numerica", "relato_id": "2026-11-14-030"}
+{"arquivo": "relatos_2026-11-14.jsonl", "linha": 38, "motivo": "duplicado", "relato_id": "2026-11-14-002"}
+{"arquivo": "relatos_2026-11-14.jsonl", "linha": 39, "motivo": "duplicado", "relato_id": "2026-11-14-003"}
+{"arquivo": "relatos_2026-11-15.jsonl", "linha": 8, "motivo": "nota_fora_da_faixa", "relato_id": "2026-11-15-008"}
+{"arquivo": "relatos_2026-11-16.jsonl", "linha": 1, "motivo": "lugar_inexistente", "relato_id": "2026-11-16-001"}
+{"arquivo": "relatos_2026-11-17.jsonl", "linha": 7, "motivo": "lugar_inexistente", "relato_id": "2026-11-17-007"}
+{"arquivo": "relatos_2026-11-17.jsonl", "linha": 30, "motivo": "nota_fora_da_faixa", "relato_id": "2026-11-17-030"}
+{"arquivo": "relatos_2026-11-19.jsonl", "linha": 12, "motivo": "sem_data_hora", "relato_id": "2026-11-19-012"}
+{"arquivo": "relatos_2026-11-19.jsonl", "linha": 15, "motivo": "sem_data_hora", "relato_id": "2026-11-19-015"}
+{"arquivo": "relatos_2026-11-19.jsonl", "linha": 44, "motivo": "duplicado", "relato_id": "2026-11-19-002"}

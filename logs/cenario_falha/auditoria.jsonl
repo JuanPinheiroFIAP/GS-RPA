@@ -1,0 +1,14 @@
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "inicio", "entrada": "entrada", "reprocessar": false}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "aviso_sal_lgpd_ausente"}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "catalogo_carregado", "lugares": 20, "arquivo": "lugares_2026-11-19.jsonl"}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-12.jsonl", "aceitos": 33, "quarentena": 4}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-13.jsonl", "aceitos": 33, "quarentena": 2}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-14.jsonl", "aceitos": 35, "quarentena": 4}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-15.jsonl", "aceitos": 32, "quarentena": 1}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-16.jsonl", "aceitos": 39, "quarentena": 2}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-17.jsonl", "aceitos": 28, "quarentena": 2}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_com_falha", "arquivo": "relatos_2026-11-18.jsonl", "motivo": "arquivo_vazio"}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_processado", "arquivo": "relatos_2026-11-19.jsonl", "aceitos": 41, "quarentena": 3}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "arquivo_com_falha", "arquivo": "relatos_2026-11-20.jsonl", "motivo": "codificacao_invalida"}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "alertas_novos", "total": 16, "ids": ["cinema-do-largo|mobility", "tempero-vivo|vision", "livraria-margem|cognitive", "livraria-margem|mobility", "movimento-livre|hearing", "teatro-alvorada|vision", "cine-estacao|vision", "cinema-do-largo|vision", "bistro-quintal|mobility", "bistro-quintal|vision", "forno-aberto|vision", "sabor-de-casa|vision", "clinica-viver|vision", "farmacia-bairro|vision", "movimento-livre|vision", "praca-encontro|mobility"]}
+{"ts": "2026-11-18T23:15:18-03:00", "execucao": "20261118T231518", "evento": "fim", "status": "parcial", "linhas_lidas": 259, "relatos_aceitos_nesta_execucao": 241, "alertas_novos": 16, "duracao_s": 0.19}

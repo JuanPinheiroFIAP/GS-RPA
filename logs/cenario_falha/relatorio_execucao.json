@@ -1,0 +1,50 @@
+{
+  "alertas_novos": 16,
+  "alertas_total": 16,
+  "arquivos": {
+    "com_falha": [
+      {
+        "arquivo": "relatos_2026-11-18.jsonl",
+        "motivo": "arquivo_vazio"
+      },
+      {
+        "arquivo": "relatos_2026-11-20.jsonl",
+        "motivo": "codificacao_invalida"
+      }
+    ],
+    "encontrados": 9,
+    "ignorados_ja_processados": 0,
+    "processados": 7
+  },
+  "avisos": {
+    "email_invalido_autor_descartado": 2
+  },
+  "base_total": 241,
+  "catalogo": {
+    "arquivo": "lugares_2026-11-19.jsonl",
+    "lugares": 20
+  },
+  "correcoes_automaticas": {
+    "necessidade_normalizada": 1
+  },
+  "duracao_s": 0.19,
+  "execucao": "20261118T231518",
+  "fim": "2026-11-18T23:15:18-03:00",
+  "inicio": "2026-11-18T23:15:18-03:00",
+  "linhas_lidas": 259,
+  "prioridades": {
+    "alta": 79,
+    "baixa": 120,
+    "media": 42
+  },
+  "rejeitados_por_motivo": {
+    "duplicado": 3,
+    "linha_json_invalida": 1,
+    "lugar_inexistente": 2,
+    "nota_fora_da_faixa": 2,
+    "nota_nao_numerica": 3,
+    "sem_data_hora": 7
+  },
+  "relatos_aceitos_nesta_execucao": 241,
+  "status": "parcial"
+}

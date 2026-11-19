@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 530" width="1500" height="530" font-family="Arial, Helvetica, sans-serif" font-size="12">
+<title>Fluxo BPMN do robô de triagem de relatos do Inclui+</title>
+<defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker></defs>
+<rect width="1500" height="530" fill="#ffffff"/>
+<text x="20" y="24" font-size="15" font-weight="bold" fill="#111827">Robô de triagem de relatos do Inclui+ (BPMN)</text>
+<polyline points="78,130 130,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="270,130 325,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="375,130 430,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="402" y="124" text-anchor="middle" fill="#6b7280" font-size="11">sim</text>
+<polyline points="350,155 350,272" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="356" y="214" text-anchor="start" fill="#6b7280" font-size="11">não</text>
+<polyline points="570,130 625,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="675,130 730,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="702" y="124" text-anchor="middle" fill="#6b7280" font-size="11">sim</text>
+<polyline points="650,155 650,412" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="656" y="284" text-anchor="start" fill="#6b7280" font-size="11">não (fim da fila)</text>
+<polyline points="870,130 925,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="975,130 1040,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1008" y="124" text-anchor="middle" fill="#6b7280" font-size="11">sim</text>
+<polyline points="950,155 950,252" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="956" y="204" text-anchor="start" fill="#6b7280" font-size="11">não (vazio, binário)</text>
+<polyline points="1180,130 1245,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="1295,130 1360,130" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1328" y="124" text-anchor="middle" fill="#6b7280" font-size="11">sim</text>
+<polyline points="1270,155 1270,252" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="1276" y="204" text-anchor="start" fill="#6b7280" font-size="11">não</text>
+<polyline points="1430,92 1430,40 500,40 500,92" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<text x="900" y="34" text-anchor="start" fill="#6b7280" font-size="11">próxima linha, próximo arquivo</text>
+<polyline points="1270,328 1270,370 500,370 500,168" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="950,328 950,370 500,370 500,168" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="720,450 760,450" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="900,450 940,450" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<polyline points="1080,450 1172,450" fill="none" stroke="#374151" stroke-width="1.6" marker-end="url(#seta)"/>
+<circle cx="60" cy="130" r="18" fill="#ffffff" stroke="#166534" stroke-width="1.6"/>
+<text x="60" y="164" text-anchor="middle" fill="#111827">Início: agendador ou</text>
+<text x="60" y="177" text-anchor="middle" fill="#111827">comando</text>
+<rect x="130.0" y="92.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="200" y="120" text-anchor="middle" fill="#111827">Carregar catálogo de</text>
+<text x="200" y="134" text-anchor="middle" fill="#111827">lugares (fallback para</text>
+<text x="200" y="148" text-anchor="middle" fill="#111827">o arquivo anterior)</text>
+<polygon points="350,105.0 375.0,130 350,155.0 325.0,130" fill="#fef9c3" stroke="#a16207" stroke-width="1.6"/><text x="350" y="135" text-anchor="middle" font-weight="bold" fill="#a16207">X</text>
+<text x="350" y="83.0" text-anchor="middle" fill="#111827">Catálogo válido?</text>
+<rect x="430.0" y="92.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="500" y="120" text-anchor="middle" fill="#111827">Listar relatos e</text>
+<text x="500" y="134" text-anchor="middle" fill="#111827">calcular o hash de</text>
+<text x="500" y="148" text-anchor="middle" fill="#111827">cada arquivo</text>
+<polygon points="650,105.0 675.0,130 650,155.0 625.0,130" fill="#fef9c3" stroke="#a16207" stroke-width="1.6"/><text x="650" y="135" text-anchor="middle" font-weight="bold" fill="#a16207">X</text>
+<text x="650" y="83.0" text-anchor="middle" fill="#111827">Há arquivo novo ou</text>
+<text x="650" y="96.0" text-anchor="middle" fill="#111827">alterado?</text>
+<rect x="730.0" y="92.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="800" y="127" text-anchor="middle" fill="#111827">Ler o próximo arquivo</text>
+<text x="800" y="141" text-anchor="middle" fill="#111827">(com tentativas)</text>
+<polygon points="950,105.0 975.0,130 950,155.0 925.0,130" fill="#fef9c3" stroke="#a16207" stroke-width="1.6"/><text x="950" y="135" text-anchor="middle" font-weight="bold" fill="#a16207">X</text>
+<text x="950" y="83.0" text-anchor="middle" fill="#111827">Arquivo legível?</text>
+<rect x="1040.0" y="92.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="1110" y="113" text-anchor="middle" fill="#111827">PARA CADA linha:</text>
+<text x="1110" y="127" text-anchor="middle" fill="#111827">validar, corrigir e</text>
+<text x="1110" y="141" text-anchor="middle" fill="#111827">proteger dados</text>
+<text x="1110" y="155" text-anchor="middle" fill="#111827">pessoais</text>
+<polygon points="1270,105.0 1295.0,130 1270,155.0 1245.0,130" fill="#fef9c3" stroke="#a16207" stroke-width="1.6"/><text x="1270" y="135" text-anchor="middle" font-weight="bold" fill="#a16207">X</text>
+<text x="1270" y="83.0" text-anchor="middle" fill="#111827">Relato válido?</text>
+<rect x="1360.0" y="92.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="1430" y="120" text-anchor="middle" fill="#111827">Aceitar e definir a</text>
+<text x="1430" y="134" text-anchor="middle" fill="#111827">prioridade (alta,</text>
+<text x="1430" y="148" text-anchor="middle" fill="#111827">média, baixa)</text>
+<circle cx="350" cy="290" r="18" fill="#ffffff" stroke="#b42318" stroke-width="3.5"/>
+<text x="350" y="324" text-anchor="middle" fill="#111827">Falha fatal registrada</text>
+<text x="350" y="337" text-anchor="middle" fill="#111827">(código 2)</text>
+<rect x="880.0" y="252.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="950" y="280" text-anchor="middle" fill="#111827">Registrar falha do</text>
+<text x="950" y="294" text-anchor="middle" fill="#111827">arquivo e seguir com o</text>
+<text x="950" y="308" text-anchor="middle" fill="#111827">lote</text>
+<rect x="1200.0" y="252.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="1270" y="280" text-anchor="middle" fill="#111827">Enviar para a</text>
+<text x="1270" y="294" text-anchor="middle" fill="#111827">quarentena com o</text>
+<text x="1270" y="308" text-anchor="middle" fill="#111827">motivo</text>
+<rect x="580.0" y="412.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="650" y="440" text-anchor="middle" fill="#111827">Gerar alertas de</text>
+<text x="650" y="454" text-anchor="middle" fill="#111827">barreira recorrente e</text>
+<text x="650" y="468" text-anchor="middle" fill="#111827">o resumo por lugar</text>
+<rect x="760.0" y="412.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="830" y="440" text-anchor="middle" fill="#111827">Gravar as saídas</text>
+<text x="830" y="454" text-anchor="middle" fill="#111827">(atômico) e o</text>
+<text x="830" y="468" text-anchor="middle" fill="#111827">relatório da execução</text>
+<rect x="940.0" y="412.0" width="140" height="76" rx="8" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/>
+<text x="1010" y="433" text-anchor="middle" fill="#111827">Avisar alertas novos</text>
+<text x="1010" y="447" text-anchor="middle" fill="#111827">(se o webhook cair,</text>
+<text x="1010" y="461" text-anchor="middle" fill="#111827">fica pendente em</text>
+<text x="1010" y="475" text-anchor="middle" fill="#111827">arquivo)</text>
+<circle cx="1190" cy="450" r="18" fill="#ffffff" stroke="#b42318" stroke-width="3.5"/>
+<text x="1190" y="484" text-anchor="middle" fill="#111827">Fim: código 0 (ok) ou 1</text>
+<text x="1190" y="497" text-anchor="middle" fill="#111827">(algum arquivo falhou)</text>
+</svg>

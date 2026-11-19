@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+# estado interno do robô e saída gerada (a pasta saida/ de exemplo e as amostras de logs ficam versionadas de propósito)
+estado/
+*.tmp

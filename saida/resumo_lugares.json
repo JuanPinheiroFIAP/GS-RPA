@@ -1,0 +1,690 @@
+{
+  "dados_ate": "2026-11-19T23:55:29-03:00",
+  "lugares": {
+    "biblioteca-entrelinhas": {
+      "bairro": "Pinheiros",
+      "nome": "Biblioteca Entrelinhas",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 3
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 4.0,
+          "relatos": 1
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 1.5,
+          "relatos": 2
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 3,
+          "nota_media": 5.0,
+          "relatos": 3
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 9,
+      "ultimo_relato_em": "2026-11-19T20:51:15-03:00"
+    },
+    "bistro-quintal": {
+      "bairro": "Pinheiros",
+      "nome": "Bistrô Quintal",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 3.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 2.0,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": true,
+          "barreiras": 4,
+          "elogios": 2,
+          "nota_media": 3.33,
+          "relatos": 6
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 4,
+          "elogios": 1,
+          "nota_media": 3.2,
+          "relatos": 5
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 14,
+      "ultimo_relato_em": "2026-11-19T12:05:04-03:00"
+    },
+    "cafe-aurora": {
+      "bairro": "Bela Vista",
+      "nome": "Café Aurora",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 1,
+          "nota_media": 3.5,
+          "relatos": 2
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 3.0,
+          "relatos": 1
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 3.0,
+          "relatos": 1
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 2,
+          "nota_media": 4.0,
+          "relatos": 3
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 7,
+      "ultimo_relato_em": "2026-11-19T06:44:30-03:00"
+    },
+    "cine-estacao": {
+      "bairro": "Barra Funda",
+      "nome": "Cine Estação",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 1.5,
+          "relatos": 2
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 2,
+          "nota_media": 4.5,
+          "relatos": 2
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 5,
+          "elogios": 1,
+          "nota_media": 2.83,
+          "relatos": 6
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 10,
+      "ultimo_relato_em": "2026-11-19T07:55:46-03:00"
+    },
+    "cine-lumiar": {
+      "bairro": "Jardins",
+      "nome": "Cine Lumiar",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 2,
+          "nota_media": 3.67,
+          "relatos": 3
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 4,
+          "nota_media": 3.83,
+          "relatos": 6
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 3,
+          "elogios": 0,
+          "nota_media": 2.0,
+          "relatos": 3
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 12,
+      "ultimo_relato_em": "2026-11-19T22:06:29-03:00"
+    },
+    "cine-vila": {
+      "bairro": "Vila Mariana",
+      "nome": "Cine Vila",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 2.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 2,
+          "nota_media": 3.75,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 6,
+          "nota_media": 4.5,
+          "relatos": 6
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 13,
+      "ultimo_relato_em": "2026-11-19T23:05:48-03:00"
+    },
+    "cinema-do-largo": {
+      "bairro": "Sé",
+      "nome": "Cinema do Largo",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 3.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 3.0,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": true,
+          "barreiras": 6,
+          "elogios": 1,
+          "nota_media": 2.57,
+          "relatos": 7
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 5,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 6
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 16,
+      "ultimo_relato_em": "2026-11-19T16:09:12-03:00"
+    },
+    "clinica-viver": {
+      "bairro": "Vila Mariana",
+      "nome": "Clínica Viver",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 2,
+          "nota_media": 4.5,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 3,
+          "nota_media": 4.0,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 4
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 10,
+      "ultimo_relato_em": "2026-11-17T20:47:01-03:00"
+    },
+    "escola-ponte": {
+      "bairro": "Bela Vista",
+      "nome": "Escola Técnica Ponte",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 3,
+          "nota_media": 3.8,
+          "relatos": 5
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 2.5,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 2,
+          "nota_media": 5.0,
+          "relatos": 2
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 2,
+          "nota_media": 3.75,
+          "relatos": 4
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 13,
+      "ultimo_relato_em": "2026-11-16T22:51:37-03:00"
+    },
+    "farmacia-bairro": {
+      "bairro": "Bela Vista",
+      "nome": "Farmácia do Bairro",
+      "por_necessidade": {
+        "hearing": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 1,
+          "nota_media": 3.5,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 4.0,
+          "relatos": 1
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 0,
+          "nota_media": 1.67,
+          "relatos": 3
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 6,
+      "ultimo_relato_em": "2026-11-19T21:46:28-03:00"
+    },
+    "forno-aberto": {
+      "bairro": "Consolação",
+      "nome": "Pizzaria Forno Aberto",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 2,
+          "nota_media": 4.5,
+          "relatos": 2
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 5.0,
+          "relatos": 1
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 2.0,
+          "relatos": 1
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 4,
+          "elogios": 3,
+          "nota_media": 3.43,
+          "relatos": 7
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 11,
+      "ultimo_relato_em": "2026-11-17T19:21:19-03:00"
+    },
+    "livraria-margem": {
+      "bairro": "Pinheiros",
+      "nome": "Livraria Margem",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 1,
+          "nota_media": 2.5,
+          "relatos": 4
+        },
+        "mobility": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 1,
+          "nota_media": 2.75,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 4,
+          "nota_media": 4.17,
+          "relatos": 6
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 14,
+      "ultimo_relato_em": "2026-11-19T17:03:31-03:00"
+    },
+    "mercado-vizinho": {
+      "bairro": "Consolação",
+      "nome": "Mercado Vizinho",
+      "por_necessidade": {
+        "hearing": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 1,
+          "nota_media": 4.0,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 3,
+          "nota_media": 4.5,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 3.0,
+          "relatos": 2
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 8,
+      "ultimo_relato_em": "2026-11-16T14:37:42-03:00"
+    },
+    "movimento-livre": {
+      "bairro": "Barra Funda",
+      "nome": "Academia Movimento Livre",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 3,
+          "nota_media": 4.67,
+          "relatos": 3
+        },
+        "hearing": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 0,
+          "nota_media": 2.33,
+          "relatos": 3
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 7,
+          "nota_media": 4.5,
+          "relatos": 8
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 4
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 18,
+      "ultimo_relato_em": "2026-11-19T17:46:36-03:00"
+    },
+    "museu-horizonte": {
+      "bairro": "Consolação",
+      "nome": "Museu Horizonte",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 4.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 2,
+          "nota_media": 4.5,
+          "relatos": 2
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 8,
+          "nota_media": 4.11,
+          "relatos": 9
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 14,
+      "ultimo_relato_em": "2026-11-19T19:25:03-03:00"
+    },
+    "parque-aguas-claras": {
+      "bairro": "Vila Mariana",
+      "nome": "Parque Águas Claras",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 5.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 0,
+          "nota_media": 2.0,
+          "relatos": 2
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 3,
+          "nota_media": 5.0,
+          "relatos": 3
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 7,
+          "nota_media": 4.56,
+          "relatos": 9
+        }
+      },
+      "tem_alerta": false,
+      "total_relatos": 15,
+      "ultimo_relato_em": "2026-11-19T23:55:29-03:00"
+    },
+    "praca-encontro": {
+      "bairro": "Liberdade",
+      "nome": "Praça do Encontro",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 3,
+          "nota_media": 4.25,
+          "relatos": 4
+        },
+        "mobility": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 1,
+          "nota_media": 2.5,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 2,
+          "nota_media": 3.0,
+          "relatos": 4
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 12,
+      "ultimo_relato_em": "2026-11-19T22:50:42-03:00"
+    },
+    "sabor-de-casa": {
+      "bairro": "Liberdade",
+      "nome": "Restaurante Sabor de Casa",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 5.0,
+          "relatos": 1
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 5.0,
+          "relatos": 1
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 5,
+          "elogios": 1,
+          "nota_media": 2.67,
+          "relatos": 6
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 8,
+      "ultimo_relato_em": "2026-11-19T17:55:15-03:00"
+    },
+    "teatro-alvorada": {
+      "bairro": "Sé",
+      "nome": "Teatro Alvorada",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 1,
+          "elogios": 0,
+          "nota_media": 2.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 2,
+          "nota_media": 3.5,
+          "relatos": 4
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 2,
+          "elogios": 2,
+          "nota_media": 3.0,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 3,
+          "elogios": 4,
+          "nota_media": 3.57,
+          "relatos": 7
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 16,
+      "ultimo_relato_em": "2026-11-19T14:12:18-03:00"
+    },
+    "tempero-vivo": {
+      "bairro": "Jardins",
+      "nome": "Tempero Vivo",
+      "por_necessidade": {
+        "cognitive": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 1,
+          "nota_media": 5.0,
+          "relatos": 1
+        },
+        "hearing": {
+          "alerta": false,
+          "barreiras": 3,
+          "elogios": 1,
+          "nota_media": 3.0,
+          "relatos": 4
+        },
+        "mobility": {
+          "alerta": false,
+          "barreiras": 0,
+          "elogios": 4,
+          "nota_media": 4.75,
+          "relatos": 4
+        },
+        "vision": {
+          "alerta": true,
+          "barreiras": 5,
+          "elogios": 1,
+          "nota_media": 2.33,
+          "relatos": 6
+        }
+      },
+      "tem_alerta": true,
+      "total_relatos": 15,
+      "ultimo_relato_em": "2026-11-19T21:52:26-03:00"
+    }
+  },
+  "versao": 1
+}

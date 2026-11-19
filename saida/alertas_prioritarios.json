@@ -1,0 +1,324 @@
+{
+  "alertas": [
+    {
+      "alerta_id": "cinema-do-largo|mobility",
+      "evidencias": [
+        "2026-11-12-030",
+        "2026-11-16-005",
+        "2026-11-16-025",
+        "2026-11-16-010",
+        "2026-11-16-003",
+        "2026-11-17-020"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "cinema-do-largo",
+      "lugar_nome": "Cinema do Largo",
+      "necessidade": "mobility",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 6,
+      "relatos_prioridade_alta": 5,
+      "severidade": "alta",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T11:53:40-03:00"
+    },
+    {
+      "alerta_id": "tempero-vivo|vision",
+      "evidencias": [
+        "2026-11-14-024",
+        "2026-11-14-027",
+        "2026-11-14-010",
+        "2026-11-16-006",
+        "2026-11-19-031"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "tempero-vivo",
+      "lugar_nome": "Tempero Vivo",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 5,
+      "relatos_prioridade_alta": 4,
+      "severidade": "alta",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T16:43:08-03:00"
+    },
+    {
+      "alerta_id": "livraria-margem|cognitive",
+      "evidencias": [
+        "2026-11-12-007",
+        "2026-11-16-040",
+        "2026-11-17-014"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "livraria-margem",
+      "lugar_nome": "Livraria Margem",
+      "necessidade": "cognitive",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 3,
+      "severidade": "alta",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T19:38:14-03:00"
+    },
+    {
+      "alerta_id": "livraria-margem|mobility",
+      "evidencias": [
+        "2026-11-13-034",
+        "2026-11-17-028",
+        "2026-11-19-003"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "livraria-margem",
+      "lugar_nome": "Livraria Margem",
+      "necessidade": "mobility",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 3,
+      "severidade": "alta",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T16:51:56-03:00"
+    },
+    {
+      "alerta_id": "movimento-livre|hearing",
+      "evidencias": [
+        "2026-11-12-016",
+        "2026-11-16-035",
+        "2026-11-19-043"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "movimento-livre",
+      "lugar_nome": "Academia Movimento Livre",
+      "necessidade": "hearing",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 3,
+      "severidade": "alta",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T10:51:18-03:00"
+    },
+    {
+      "alerta_id": "teatro-alvorada|vision",
+      "evidencias": [
+        "2026-11-14-021",
+        "2026-11-15-021",
+        "2026-11-17-024"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "teatro-alvorada",
+      "lugar_nome": "Teatro Alvorada",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 3,
+      "severidade": "alta",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T11:33:01-03:00"
+    },
+    {
+      "alerta_id": "cine-estacao|vision",
+      "evidencias": [
+        "2026-11-12-035",
+        "2026-11-15-007",
+        "2026-11-16-022",
+        "2026-11-16-037",
+        "2026-11-17-008"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "cine-estacao",
+      "lugar_nome": "Cine Estação",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 5,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T16:32:28-03:00"
+    },
+    {
+      "alerta_id": "cinema-do-largo|vision",
+      "evidencias": [
+        "2026-11-13-007",
+        "2026-11-14-029",
+        "2026-11-19-011",
+        "2026-11-19-017",
+        "2026-11-19-020"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "cinema-do-largo",
+      "lugar_nome": "Cinema do Largo",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 5,
+      "relatos_prioridade_alta": 1,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T16:09:12-03:00"
+    },
+    {
+      "alerta_id": "bistro-quintal|mobility",
+      "evidencias": [
+        "2026-11-14-011",
+        "2026-11-16-019",
+        "2026-11-17-010",
+        "2026-11-19-016"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "bistro-quintal",
+      "lugar_nome": "Bistrô Quintal",
+      "necessidade": "mobility",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 4,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T12:05:04-03:00"
+    },
+    {
+      "alerta_id": "bistro-quintal|vision",
+      "evidencias": [
+        "2026-11-14-005",
+        "2026-11-17-019",
+        "2026-11-17-017",
+        "2026-11-19-004"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "bistro-quintal",
+      "lugar_nome": "Bistrô Quintal",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 4,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T07:07:26-03:00"
+    },
+    {
+      "alerta_id": "forno-aberto|vision",
+      "evidencias": [
+        "2026-11-12-034",
+        "2026-11-15-011",
+        "2026-11-16-027",
+        "2026-11-17-022"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "forno-aberto",
+      "lugar_nome": "Pizzaria Forno Aberto",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 4,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T19:21:19-03:00"
+    },
+    {
+      "alerta_id": "sabor-de-casa|vision",
+      "evidencias": [
+        "2026-11-17-006",
+        "2026-11-17-021",
+        "2026-11-19-039",
+        "2026-11-19-024"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "sabor-de-casa",
+      "lugar_nome": "Restaurante Sabor de Casa",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 4,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T17:55:15-03:00"
+    },
+    {
+      "alerta_id": "clinica-viver|vision",
+      "evidencias": [
+        "2026-11-15-015",
+        "2026-11-17-001",
+        "2026-11-17-015"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "clinica-viver",
+      "lugar_nome": "Clínica Viver",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 1,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T20:47:01-03:00"
+    },
+    {
+      "alerta_id": "farmacia-bairro|vision",
+      "evidencias": [
+        "2026-11-12-009",
+        "2026-11-13-015",
+        "2026-11-19-034"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "farmacia-bairro",
+      "lugar_nome": "Farmácia do Bairro",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-19T16:55:45-03:00"
+    },
+    {
+      "alerta_id": "movimento-livre|vision",
+      "evidencias": [
+        "2026-11-12-033",
+        "2026-11-14-035",
+        "2026-11-15-013"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "movimento-livre",
+      "lugar_nome": "Academia Movimento Livre",
+      "necessidade": "vision",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-15T11:48:00-03:00"
+    },
+    {
+      "alerta_id": "praca-encontro|mobility",
+      "evidencias": [
+        "2026-11-14-034",
+        "2026-11-16-018",
+        "2026-11-17-002"
+      ],
+      "janela_dias": 7,
+      "lugar_id": "praca-encontro",
+      "lugar_nome": "Praça do Encontro",
+      "necessidade": "mobility",
+      "recomendacao": "Revisar a nota do lugar para esta necessidade e confirmar o recurso por foto ou contato.",
+      "relatos_na_janela": 3,
+      "relatos_prioridade_alta": 2,
+      "severidade": "media",
+      "status": "pendente_revisao",
+      "tipo": "barreira_recorrente",
+      "ultimo_relato_em": "2026-11-17T11:16:58-03:00"
+    }
+  ],
+  "dados_ate": "2026-11-19T23:55:29-03:00",
+  "total": 16,
+  "versao": 1
+}

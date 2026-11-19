@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BPMN 2.0 do robô de triagem de relatos do Inclui+ (gerado por scripts/gerar_bpmn.py). Abre em bpmn.io ou Camunda Modeler. -->
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+             xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+             id="Definitions_rpa" targetNamespace="https://github.com/kaikyalvaro1708/inclui-gs/rpa">
+  <process id="Proc_robo" name="Triagem de relatos do Inclui+" isExecutable="false">
+    <startEvent id="Start" name="Início: agendador ou comando"><outgoing>f1</outgoing></startEvent>
+    <task id="T_catalogo" name="Carregar catálogo de lugares (fallback para o arquivo anterior)"><incoming>f1</incoming><outgoing>f2</outgoing></task>
+    <exclusiveGateway id="G_catalogo" name="Catálogo válido?"><incoming>f2</incoming><outgoing>f3_sim</outgoing><outgoing>f3_nao</outgoing></exclusiveGateway>
+    <task id="T_listar" name="Listar relatos e calcular o hash de cada arquivo"><incoming>f3_sim</incoming><incoming>f_volta</incoming><incoming>f_volta_q</incoming><incoming>f_volta_falha</incoming><outgoing>f4</outgoing></task>
+    <exclusiveGateway id="G_novo" name="Há arquivo novo ou alterado?"><incoming>f4</incoming><outgoing>f5_sim</outgoing><outgoing>f5_nao</outgoing></exclusiveGateway>
+    <task id="T_ler" name="Ler o próximo arquivo (com tentativas)"><incoming>f5_sim</incoming><outgoing>f6</outgoing></task>
+    <exclusiveGateway id="G_legivel" name="Arquivo legível?"><incoming>f6</incoming><outgoing>f7_sim</outgoing><outgoing>f7_nao</outgoing></exclusiveGateway>
+    <task id="T_validar" name="PARA CADA linha: validar, corrigir e proteger dados pessoais"><incoming>f7_sim</incoming><outgoing>f8</outgoing></task>
+    <exclusiveGateway id="G_valido" name="Relato válido?"><incoming>f8</incoming><outgoing>f9_sim</outgoing><outgoing>f9_nao</outgoing></exclusiveGateway>
+    <task id="T_priorizar" name="Aceitar e definir a prioridade (alta, média, baixa)"><incoming>f9_sim</incoming><outgoing>f_volta</outgoing></task>
+    <endEvent id="E_fatal" name="Falha fatal registrada (código 2)"><incoming>f3_nao</incoming></endEvent>
+    <task id="T_falha" name="Registrar falha do arquivo e seguir com o lote"><incoming>f7_nao</incoming><outgoing>f_volta_falha</outgoing></task>
+    <task id="T_quarentena" name="Enviar para a quarentena com o motivo"><incoming>f9_nao</incoming><outgoing>f_volta_q</outgoing></task>
+    <task id="T_alertas" name="Gerar alertas de barreira recorrente e o resumo por lugar"><incoming>f5_nao</incoming><outgoing>f10</outgoing></task>
+    <task id="T_gravar" name="Gravar as saídas (atômico) e o relatório da execução"><incoming>f10</incoming><outgoing>f11</outgoing></task>
+    <task id="T_notificar" name="Avisar alertas novos (se o webhook cair, fica pendente em arquivo)"><incoming>f11</incoming><outgoing>f12</outgoing></task>
+    <endEvent id="End_ok" name="Fim: código 0 (ok) ou 1 (algum arquivo falhou)"><incoming>f12</incoming></endEvent>
+    <sequenceFlow id="f1" sourceRef="Start" targetRef="T_catalogo"/>
+    <sequenceFlow id="f2" sourceRef="T_catalogo" targetRef="G_catalogo"/>
+    <sequenceFlow id="f3_sim" name="sim" sourceRef="G_catalogo" targetRef="T_listar"/>
+    <sequenceFlow id="f3_nao" name="não" sourceRef="G_catalogo" targetRef="E_fatal"/>
+    <sequenceFlow id="f4" sourceRef="T_listar" targetRef="G_novo"/>
+    <sequenceFlow id="f5_sim" name="sim" sourceRef="G_novo" targetRef="T_ler"/>
+    <sequenceFlow id="f5_nao" name="não (fim da fila)" sourceRef="G_novo" targetRef="T_alertas"/>
+    <sequenceFlow id="f6" sourceRef="T_ler" targetRef="G_legivel"/>
+    <sequenceFlow id="f7_sim" name="sim" sourceRef="G_legivel" targetRef="T_validar"/>
+    <sequenceFlow id="f7_nao" name="não (vazio, binário)" sourceRef="G_legivel" targetRef="T_falha"/>
+    <sequenceFlow id="f8" sourceRef="T_validar" targetRef="G_valido"/>
+    <sequenceFlow id="f9_sim" name="sim" sourceRef="G_valido" targetRef="T_priorizar"/>
+    <sequenceFlow id="f9_nao" name="não" sourceRef="G_valido" targetRef="T_quarentena"/>
+    <sequenceFlow id="f_volta" name="próxima linha, próximo arquivo" sourceRef="T_priorizar" targetRef="T_listar"/>
+    <sequenceFlow id="f_volta_q" sourceRef="T_quarentena" targetRef="T_listar"/>
+    <sequenceFlow id="f_volta_falha" sourceRef="T_falha" targetRef="T_listar"/>
+    <sequenceFlow id="f10" sourceRef="T_alertas" targetRef="T_gravar"/>
+    <sequenceFlow id="f11" sourceRef="T_gravar" targetRef="T_notificar"/>
+    <sequenceFlow id="f12" sourceRef="T_notificar" targetRef="End_ok"/>
+  </process>
+  <bpmndi:BPMNDiagram id="Diagrama_1"><bpmndi:BPMNPlane id="Plano_1" bpmnElement="Proc_robo">
+      <bpmndi:BPMNShape id="S_Start" bpmnElement="Start"><dc:Bounds x="42" y="112" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_catalogo" bpmnElement="T_catalogo"><dc:Bounds x="130" y="92" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_G_catalogo" bpmnElement="G_catalogo" isMarkerVisible="true"><dc:Bounds x="325" y="105" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_listar" bpmnElement="T_listar"><dc:Bounds x="430" y="92" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_G_novo" bpmnElement="G_novo" isMarkerVisible="true"><dc:Bounds x="625" y="105" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_ler" bpmnElement="T_ler"><dc:Bounds x="730" y="92" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_G_legivel" bpmnElement="G_legivel" isMarkerVisible="true"><dc:Bounds x="925" y="105" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_validar" bpmnElement="T_validar"><dc:Bounds x="1040" y="92" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_G_valido" bpmnElement="G_valido" isMarkerVisible="true"><dc:Bounds x="1245" y="105" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_priorizar" bpmnElement="T_priorizar"><dc:Bounds x="1360" y="92" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_E_fatal" bpmnElement="E_fatal"><dc:Bounds x="332" y="272" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_falha" bpmnElement="T_falha"><dc:Bounds x="880" y="252" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_quarentena" bpmnElement="T_quarentena"><dc:Bounds x="1200" y="252" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_alertas" bpmnElement="T_alertas"><dc:Bounds x="580" y="412" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_gravar" bpmnElement="T_gravar"><dc:Bounds x="760" y="412" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_T_notificar" bpmnElement="T_notificar"><dc:Bounds x="940" y="412" width="140" height="76"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_End_ok" bpmnElement="End_ok"><dc:Bounds x="1172" y="432" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="E_f1" bpmnElement="f1"><di:waypoint x="78" y="130"/><di:waypoint x="130" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f2" bpmnElement="f2"><di:waypoint x="270" y="130"/><di:waypoint x="325" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f3_sim" bpmnElement="f3_sim"><di:waypoint x="375" y="130"/><di:waypoint x="430" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f3_nao" bpmnElement="f3_nao"><di:waypoint x="350" y="155"/><di:waypoint x="350" y="272"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f4" bpmnElement="f4"><di:waypoint x="570" y="130"/><di:waypoint x="625" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f5_sim" bpmnElement="f5_sim"><di:waypoint x="675" y="130"/><di:waypoint x="730" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f5_nao" bpmnElement="f5_nao"><di:waypoint x="650" y="155"/><di:waypoint x="650" y="412"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f6" bpmnElement="f6"><di:waypoint x="870" y="130"/><di:waypoint x="925" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f7_sim" bpmnElement="f7_sim"><di:waypoint x="975" y="130"/><di:waypoint x="1040" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f7_nao" bpmnElement="f7_nao"><di:waypoint x="950" y="155"/><di:waypoint x="950" y="252"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f8" bpmnElement="f8"><di:waypoint x="1180" y="130"/><di:waypoint x="1245" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f9_sim" bpmnElement="f9_sim"><di:waypoint x="1295" y="130"/><di:waypoint x="1360" y="130"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f9_nao" bpmnElement="f9_nao"><di:waypoint x="1270" y="155"/><di:waypoint x="1270" y="252"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f_volta" bpmnElement="f_volta"><di:waypoint x="1430" y="92"/><di:waypoint x="1430" y="40"/><di:waypoint x="500" y="40"/><di:waypoint x="500" y="92"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f_volta_q" bpmnElement="f_volta_q"><di:waypoint x="1270" y="328"/><di:waypoint x="1270" y="370"/><di:waypoint x="500" y="370"/><di:waypoint x="500" y="168"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f_volta_falha" bpmnElement="f_volta_falha"><di:waypoint x="950" y="328"/><di:waypoint x="950" y="370"/><di:waypoint x="500" y="370"/><di:waypoint x="500" y="168"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f10" bpmnElement="f10"><di:waypoint x="720" y="450"/><di:waypoint x="760" y="450"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f11" bpmnElement="f11"><di:waypoint x="900" y="450"/><di:waypoint x="940" y="450"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="E_f12" bpmnElement="f12"><di:waypoint x="1080" y="450"/><di:waypoint x="1172" y="450"/></bpmndi:BPMNEdge>
+  </bpmndi:BPMNPlane></bpmndi:BPMNDiagram>
+</definitions>

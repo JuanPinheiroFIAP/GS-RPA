@@ -1,0 +1,31 @@
+test_arquivo_que_falhou_e_reprocessado_quando_for_corrigido (test_robo.TestFalhas.test_arquivo_que_falhou_e_reprocessado_quando_for_corrigido) ... ok
+test_arquivo_vazio_ou_com_codificacao_quebrada_nao_para_os_outros (test_robo.TestFalhas.test_arquivo_vazio_ou_com_codificacao_quebrada_nao_para_os_outros) ... ok
+test_catalogo_mais_recente_quebrado_cai_para_o_anterior (test_robo.TestFalhas.test_catalogo_mais_recente_quebrado_cai_para_o_anterior) ... ok
+test_estado_corrompido_e_reconstruido (test_robo.TestFalhas.test_estado_corrompido_e_reconstruido) ... ok
+test_leitura_transitoria_com_falha_e_repetida (test_robo.TestFalhas.test_leitura_transitoria_com_falha_e_repetida) ... ok
+test_linhas_ruins_vao_para_quarentena_e_o_resto_segue (test_robo.TestFalhas.test_linhas_ruins_vao_para_quarentena_e_o_resto_segue) ... ok
+test_pasta_de_relatos_ausente_e_falha_fatal (test_robo.TestFalhas.test_pasta_de_relatos_ausente_e_falha_fatal) ... ok
+test_sem_catalogo_e_falha_fatal_e_registrada (test_robo.TestFalhas.test_sem_catalogo_e_falha_fatal_e_registrada) ... ok
+test_webhook_fora_do_ar_nao_derruba_e_guarda_pendencia (test_robo.TestFalhas.test_webhook_fora_do_ar_nao_derruba_e_guarda_pendencia) ... ok
+test_arquivo_reeditado_substitui_o_anterior_sem_fantasmas (test_robo.TestSucesso.test_arquivo_reeditado_substitui_o_anterior_sem_fantasmas) ... ok
+test_auditoria_tem_data_hora_e_contagens (test_robo.TestSucesso.test_auditoria_tem_data_hora_e_contagens) ... ok
+test_dois_lotes_so_o_novo_entra_e_reexecutar_nao_duplica (test_robo.TestSucesso.test_dois_lotes_so_o_novo_entra_e_reexecutar_nao_duplica) ... ok
+test_lgpd_nenhuma_saida_nem_log_tem_nome_ou_email (test_robo.TestSucesso.test_lgpd_nenhuma_saida_nem_log_tem_nome_ou_email) ... ok
+test_limite_de_arquivos_simula_lotes (test_robo.TestSucesso.test_limite_de_arquivos_simula_lotes) ... ok
+test_processa_valida_e_grava_saidas_para_o_mvp (test_robo.TestSucesso.test_processa_valida_e_grava_saidas_para_o_mvp) ... ok
+test_alerta_so_com_tres_barreiras_do_mesmo_lugar_e_necessidade (test_validacao_decisao.TestDecisao.test_alerta_so_com_tres_barreiras_do_mesmo_lugar_e_necessidade) ... ok
+test_elogio_nao_conta_para_alerta (test_validacao_decisao.TestDecisao.test_elogio_nao_conta_para_alerta) ... ok
+test_necessidades_diferentes_nao_somam (test_validacao_decisao.TestDecisao.test_necessidades_diferentes_nao_somam) ... ok
+test_prioridade (test_validacao_decisao.TestDecisao.test_prioridade) ... ok
+test_relatos_antigos_fora_da_janela_nao_contam (test_validacao_decisao.TestDecisao.test_relatos_antigos_fora_da_janela_nao_contam) ... ok
+test_dado_pessoal_digitado_no_texto_e_removido (test_validacao_decisao.TestValidacao.test_dado_pessoal_digitado_no_texto_e_removido) ... ok
+test_email_invalido_nao_derruba_o_relato (test_validacao_decisao.TestValidacao.test_email_invalido_nao_derruba_o_relato) ... ok
+test_mesmo_autor_gera_mesmo_hash_e_sal_muda_o_hash (test_validacao_decisao.TestValidacao.test_mesmo_autor_gera_mesmo_hash_e_sal_muda_o_hash) ... ok
+test_recupera_em_vez_de_rejeitar (test_validacao_decisao.TestValidacao.test_recupera_em_vez_de_rejeitar) ... ok
+test_rejeicoes_com_motivo_fixo (test_validacao_decisao.TestValidacao.test_rejeicoes_com_motivo_fixo) ... ok
+test_relato_valido_e_aceito_sem_dado_pessoal (test_validacao_decisao.TestValidacao.test_relato_valido_e_aceito_sem_dado_pessoal) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.065s
+
+OK
